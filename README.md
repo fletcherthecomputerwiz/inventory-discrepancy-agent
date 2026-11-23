@@ -1,10 +1,3 @@
-# Inventory Discrepancy Agent 
----
-A multi-agent AI system that finds and investigates phantom inventory in retail stores: items the system shows as on hand but that aren't on the shelf, which stops automatic replenishment from reordering them. SQL rules flag likely cases, AI agents investigate the root cause, and a manager approves the recommended fix before any inventory record changes.
-
-## How It Works
----
-SQL-based detection flags suspect store/SKU pairs. AI agents then gather sales, receiving and adjustment evidence, retrieve the relevant store procedures with citations, and recommend a corrective action, with human approval required before any inventory change. Built on Python, Google Cloud (Gemini, Vertex AI, Cloud Run), LangGraph and ADK, using synthetic retail data.
 
 # Inventory Discrepancy Agent
 
@@ -16,3 +9,4 @@ Deterministic SQL flags candidate store/SKU pairs by comparing sales velocity ag
 
 Built with Python, LangGraph, Google ADK, Gemini and Vertex AI, deployed on Cloud Run. Uses synthetic retail data.
 
+Status: Day 1 — environment and repo setup complete.
